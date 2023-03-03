@@ -1,0 +1,25 @@
+//ESTRUTURA BÁSICA DE UM PROJETO FLUTTER
+
+import 'package:flutter/material.dart';
+
+const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
+
+void main() {
+      runApp(MaterialApp(
+    
+         title: "Trabalhando com imagens",
+        home: Container(
+          margin: EdgeInsets.only(  top: 40 ),
+          decoration: BoxDecoration(
+            border: Border.all( width: 3, color: Colors.white)
+           ),
+          child: Image.asset(
+            "Imagens/mesa.jpg",
+            fit: BoxFit.scaleDown
+          ),
+        
+       )
+        ));
+
+  
+  }
